@@ -6,5 +6,5 @@ const textChenge = document.getElementById('text');
 
 // btn要素がクリックされたときにイベントを実行
 btnChenge.addEventListener('click',() => {
-  textChenge.textContent = 'ボタンをクリックしました'
-})
+  textChenge.textContent = 'ボタンをクリックしました';
+});

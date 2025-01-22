@@ -117,8 +117,18 @@
             // 追加　　再度変数に入力されいる値を代入
             let minutes = document.getElementById('minutes').value || 0;
             let seconds = document.getElementById('seconds').value || 0;
-            updateTimer();
+            // updateTimer();
+            // setMode("restart");
+
+            // 追加コード
+            // タイマー表示を入力された値に更新
+            document.getElementById('timer').innerText = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+            // 入力フォームを再度表示し、スタートボタンを表示
             setMode("restart");
+
+            // isPausedフラグをリセット（停止状態にする）
+            isPaused = false;
         }
 
         // 時間設定モードに変更する関数
